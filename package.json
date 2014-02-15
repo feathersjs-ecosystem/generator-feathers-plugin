@@ -1,15 +1,16 @@
 {
   "name": "generator-feathers-plugin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A generator for Yeoman",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "feathers"
   ],
   "homepage": "https://github.com/Glavin001/generator-feathers-plugin",
   "bugs": "https://github.com/Glavin001/generator-feathers-plugin/issues",
   "author": {
     "name": "Glavin Wiechert",
-    "email": "",
+    "email": "glavin.wiechert@gmail.com",
     "url": "https://github.com/Glavin001"
   },
   "main": "app/index.js",

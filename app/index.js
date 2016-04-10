@@ -74,7 +74,6 @@ module.exports = generators.Base.extend({
       'feathers@^2.0.0',
       'feathers-hooks@^2.0.0',
       'feathers-rest@^1.2.2',
-      'feathers-memory@^0.7.0',
       'body-parser@^1.9.0',
       'nsp@^2.2.0'
     ], { saveDev: true});

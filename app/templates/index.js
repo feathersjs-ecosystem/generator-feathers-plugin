@@ -12,7 +12,12 @@ class Service {
 
   create(data) {
     return new Promise((resolve, reject) => {
-      // Put some code here.
+      // Put some async code here.
+      if (!data) {
+        return reject(new errors.BadRequest());
+      }
+
+      resolve(data);
     });
   }
 }

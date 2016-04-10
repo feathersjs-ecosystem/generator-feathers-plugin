@@ -1,12 +1,12 @@
-var feathers = require('feathers');
-var rest = require('feathers-rest');
-var hooks = require('feathers-hooks');
-var bodyParser = require('body-parser');
-var errorHandler = require('feathers-errors/handler');
-var plugin = require('../lib/index');
+const feathers = require('feathers');
+const rest = require('feathers-rest');
+const hooks = require('feathers-hooks');
+const bodyParser = require('body-parser');
+const errorHandler = require('feathers-errors/handler');
+const plugin = require('../lib/index');
 
 // Initialize the application
-var app = feathers()
+const app = feathers()
   .configure(rest())
   .configure(hooks())
   // Needed for parsing bodies (login)

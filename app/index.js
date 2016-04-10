@@ -2,7 +2,7 @@
 
 var generators = require('yeoman-generator');
 var path = require('path');
-var _ = require('lodash');
+var assign = require('object.assign').getPolyfill();
 
 module.exports = generators.Base.extend({
   initializing: function () {
@@ -39,7 +39,7 @@ module.exports = generators.Base.extend({
     }];
 
     this.prompt(prompts, function (props) {
-      this.props = _.extend(this.props, props);
+      this.props = assign(this.props, props);
 
       done();
     }.bind(this));

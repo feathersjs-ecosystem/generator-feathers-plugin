@@ -47,6 +47,7 @@ module.exports = generators.Base.extend({
   },
 
   writing: function () {
+    this.fs.copy(this.templatePath('static/.*'), this.destinationPath());
     this.fs.copy(this.templatePath('static/**/*'), this.destinationPath());
 
     Object.keys(this.fileMap).forEach(function(src) {
@@ -76,7 +77,8 @@ module.exports = generators.Base.extend({
       'feathers-hooks@^1.5.0',
       'feathers-rest@^1.2.2',
       'body-parser@^1.9.0',
-      'nsp@^2.2.0'
+      'nsp@^2.2.0',
+      'rimraf@^2.5.0'
     ], { saveDev: true});
   }
 });

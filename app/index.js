@@ -8,7 +8,8 @@ module.exports = generators.Base.extend({
   initializing: function () {
     this.pkg = this.fs.readJSON(this.destinationPath('package.json'), {});
     this.props = {
-      name: process.cwd().split(path.sep).pop()
+      name: process.cwd().split(path.sep).pop(),
+      description: this.pkg.description
     };
     this.fileMap = {
       'package.json': 'package.json',
@@ -72,7 +73,7 @@ module.exports = generators.Base.extend({
       'mocha@^2.0.0',
       'chai@^3.5.0',
       'feathers@^2.0.0',
-      'feathers-hooks@^2.0.0',
+      'feathers-hooks@^1.5.0',
       'feathers-rest@^1.2.2',
       'body-parser@^1.9.0',
       'nsp@^2.2.0'

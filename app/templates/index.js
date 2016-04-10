@@ -10,14 +10,14 @@ class Service {
     this.options = options;
   }
 
-  create(data) {
+  find(params) {
     return new Promise((resolve, reject) => {
       // Put some async code here.
-      if (!data) {
+      if (!params.query) {
         return reject(new errors.BadRequest());
       }
 
-      resolve(data);
+      resolve([]);
     });
   }
 }

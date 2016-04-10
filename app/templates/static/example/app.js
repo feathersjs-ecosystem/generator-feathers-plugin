@@ -12,8 +12,8 @@ var app = feathers()
   // Needed for parsing bodies (login)
   .use(bodyParser.json())
   .use(bodyParser.urlencoded({ extended: true }))
-  // Configure your feathers plugin
-  .configure(plugin())
+  // Initialize your feathers plugin
+  .use('/plugin', plugin())
   .use(errorHandler());
 
 app.listen(3030);

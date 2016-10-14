@@ -6,13 +6,11 @@ describe('<%= name %>', () => {
     expect(typeof require('../lib')).to.equal('function');
   });
 
-  it('basic functionality', done => {
+  it('basic functionality', () => {
     expect(typeof plugin).to.equal('function', 'It worked');
-    done();
   });
 
-  it('exposes the Service class', done => {
+  it('exposes the Service class', () => {
     expect(plugin.Service).to.not.equal(undefined);
-    done();
   });
 });

@@ -72,6 +72,7 @@ module.exports = generators.Base.extend({
       'babel-plugin-add-module-exports',
       'semistandard',
       'mocha@^2.0.0',
+      'istanbul@1.1.0-alpha.1',
       'chai@^3.5.0',
       'feathers@^2.0.0',
       'feathers-hooks@^1.5.0',

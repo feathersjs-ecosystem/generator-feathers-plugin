@@ -66,11 +66,13 @@ module.exports = generators.Base.extend({
     ], { save: true });
 
     this.npmInstall([
-      'babel-core@^6.0.0',
-      'babel-cli@^6.0.0',
+      'babel-core@^6.17.0',
+      'babel-cli@^6.16.0',
+      'babel-polyfill@6.16.0'
       'babel-preset-es2015@^6.0.0',
       'babel-plugin-add-module-exports',
       'semistandard',
+      'eslint-if-supported^1.0.1',
       'mocha@^2.0.0',
       'istanbul@1.1.0-alpha.1',
       'chai@^3.5.0',

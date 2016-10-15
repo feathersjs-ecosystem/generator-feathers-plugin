@@ -60,10 +60,7 @@ module.exports = generators.Base.extend({
       );
     }.bind(this));
 
-    this.npmInstall([
-      'feathers-errors@^2.0.0',
-      'debug@^2.2.0'
-    ], { save: true });
+    this.npmInstall([ 'debug' ], { save: true });
 
     this.npmInstall([
       'babel-core@^6.0.0',

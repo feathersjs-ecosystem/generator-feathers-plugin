@@ -68,13 +68,9 @@ module.exports = generators.Base.extend({
       'babel-preset-es2015@^6.0.0',
       'babel-plugin-add-module-exports',
       'semistandard',
-      'mocha@^2.0.0',
+      'mocha',
       'istanbul@1.1.0-alpha.1',
       'chai@^3.5.0',
-      'feathers@^2.0.0',
-      'feathers-hooks@^1.5.0',
-      'feathers-rest@^1.2.2',
-      'body-parser@^1.9.0',
       'rimraf@^2.5.0'
     ], { saveDev: true});
   }

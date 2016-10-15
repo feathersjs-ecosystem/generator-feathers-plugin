@@ -41,6 +41,7 @@
     "start": "npm run compile && node example/app"
   },
   "semistandard": {
+    "sourceType": "module",
     "env": [
       "mocha"
     ]

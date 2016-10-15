@@ -31,11 +31,10 @@ describe('feathers-plugin generator', function () {
         assert.ok(fs.existsSync(path.join(tmpDir, '.babelrc')));
         assert.ok(fs.existsSync(path.join(tmpDir, '.istanbul.yml')));
         assert.ok(fs.existsSync(path.join(tmpDir, 'package.json')));
-        assert.ok(fs.existsSync(path.join(tmpDir, 'mocha.opts')));
         assert.ok(fs.existsSync(path.join(tmpDir, 'src', 'index.js')));
         assert.ok(fs.existsSync(path.join(tmpDir, 'test', 'index.test.js')));
 
-        var child = exec('npm test', {
+        var child = exec('npm run compile && npm run mocha', {
           cwd: tmpDir
         });
         var buffer = '';

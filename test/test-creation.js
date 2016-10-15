@@ -35,7 +35,26 @@ describe('feathers-plugin generator', function () {
         assert.ok(fs.existsSync(path.join(tmpDir, 'src', 'index.js')));
         assert.ok(fs.existsSync(path.join(tmpDir, 'test', 'index.test.js')));
 
-        done();
+        var child = exec('npm run compile && npm run mocha', {
+          cwd: tmpDir
+        });
+        var buffer = '';
+
+        child.stdout.on('data', function(data) {
+          buffer += data.toString();
+        });
+
+        child.stderr.on('data', function(data) {
+          buffer += data.toString();
+        });
+
+        child.on('exit', function (status) {
+          if(status !== 0) {
+            return done(new Error(buffer));
+          }
+
+          done();
+        });
       });
   });
 });

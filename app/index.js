@@ -60,26 +60,19 @@ module.exports = generators.Base.extend({
       );
     }.bind(this));
 
-    this.npmInstall([
-      'feathers-errors@^2.0.0',
-      'debug@^2.2.0'
-    ], { save: true });
+    this.npmInstall([ 'debug', 'feathers-errors' ], { save: true });
 
     this.npmInstall([
       'babel-core@^6.17.0',
       'babel-cli@^6.16.0',
-      'babel-polyfill@6.16.0'
+      'babel-polyfill@6.16.0',
       'babel-preset-es2015@^6.0.0',
       'babel-plugin-add-module-exports',
       'semistandard',
-      'eslint-if-supported^1.0.1',
-      'mocha@^2.0.0',
+      'eslint-if-supported',
+      'mocha',
       'istanbul@1.1.0-alpha.1',
       'chai@^3.5.0',
-      'feathers@^2.0.0',
-      'feathers-hooks@^1.5.0',
-      'feathers-rest@^1.2.2',
-      'body-parser@^1.9.0',
       'rimraf@^2.5.0'
     ], { saveDev: true});
   }

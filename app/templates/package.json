@@ -23,7 +23,7 @@
     "url": "https://github.com/<%= repository %>/issues"
   },
   "engines": {
-    "node": ">= 0.12.0"
+    "node": ">= 4.6.0"
   },
   "scripts": {
     "prepublish": "npm run compile",
@@ -41,6 +41,7 @@
     "start": "npm run compile && node example/app"
   },
   "semistandard": {
+    "sourceType": "module",
     "env": [
       "mocha"
     ]

@@ -8,9 +8,6 @@ describe('<%= name %>', () => {
 
   it('basic functionality', () => {
     expect(typeof plugin).to.equal('function', 'It worked');
-  });
-
-  it('exposes the Service class', () => {
-    expect(plugin.Service).to.not.equal(undefined);
+    expect(plugin()).to.equal('<%= name %>');
   });
 });

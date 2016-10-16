@@ -69,7 +69,6 @@ module.exports = generators.Base.extend({
       'babel-preset-es2015@^6.0.0',
       'babel-plugin-add-module-exports',
       'semistandard',
-      'eslint-if-supported',
       'mocha',
       'istanbul@1.1.0-alpha.1',
       'chai@^3.5.0',

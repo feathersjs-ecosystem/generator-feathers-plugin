@@ -65,7 +65,6 @@ module.exports = generators.Base.extend({
     this.npmInstall([
       'babel-core@^6.17.0',
       'babel-cli@^6.16.0',
-      'babel-polyfill@6.16.0',
       'babel-preset-es2015@^6.0.0',
       'babel-plugin-add-module-exports',
       'semistandard',

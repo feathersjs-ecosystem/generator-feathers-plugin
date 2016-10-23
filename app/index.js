@@ -49,6 +49,7 @@ module.exports = generators.Base.extend({
   writing: function () {
     this.fs.copy(this.templatePath('static/.*'), this.destinationPath());
     this.fs.copy(this.templatePath('static/**/*'), this.destinationPath());
+    this.fs.copy(this.templatePath('static/.github/**/*'), this.destinationPath('.github/'));
 
     Object.keys(this.fileMap).forEach(function (src) {
       var target = this.fileMap[src];

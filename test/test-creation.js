@@ -30,6 +30,9 @@ describe('feathers-plugin generator', function () {
         assert.ok(fs.existsSync(path.join(tmpDir, '.editorconfig')));
         assert.ok(fs.existsSync(path.join(tmpDir, '.babelrc')));
         assert.ok(fs.existsSync(path.join(tmpDir, '.istanbul.yml')));
+        assert.ok(fs.existsSync(path.join(tmpDir, '.github', 'contributing.md')));
+        assert.ok(fs.existsSync(path.join(tmpDir, '.github', 'issue_template.md')));
+        assert.ok(fs.existsSync(path.join(tmpDir, '.github', 'pull_request_template.md')));
         assert.ok(fs.existsSync(path.join(tmpDir, 'package.json')));
         assert.ok(fs.existsSync(path.join(tmpDir, 'mocha.opts')));
         assert.ok(fs.existsSync(path.join(tmpDir, 'src', 'index.js')));

@@ -72,7 +72,7 @@ module.exports = generators.Base.extend({
       'mocha',
       'istanbul@1.1.0-alpha.1',
       'chai@^3.5.0',
-      'rimraf@^2.5.0'
-    ], {saveDev: true});
+      'shx@^0.2.1'
+    ], { saveDev: true});
   }
 });

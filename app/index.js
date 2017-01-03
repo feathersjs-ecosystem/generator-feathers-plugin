@@ -61,7 +61,9 @@ module.exports = generators.Base.extend({
       );
     }.bind(this));
 
-    this.npmInstall([ 'debug', 'feathers-errors' ], { save: true });
+    this.npmInstall(['debug', 'feathers-errors'], {
+      save: true
+    });
 
     this.npmInstall([
       'babel-core@^6.17.0',
@@ -73,6 +75,8 @@ module.exports = generators.Base.extend({
       'istanbul@1.1.0-alpha.1',
       'chai@^3.5.0',
       'shx@^0.2.1'
-    ], { saveDev: true});
+    ], {
+      saveDev: true
+    });
   }
 });

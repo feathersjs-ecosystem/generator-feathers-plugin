@@ -61,11 +61,11 @@ module.exports = class FeathersPluginGenerator extends Generator {
       );
     }.bind(this));
 
-    this.yarnInstall(['debug', 'feathers-errors'], {
+    this.npmInstall(['debug', 'feathers-errors'], {
       save: true
     });
 
-    this.yarnInstall([
+    this.npmInstall([
       'babel-core@^6.17.0',
       'babel-cli@^6.16.0',
       'babel-preset-es2015@^6.0.0',

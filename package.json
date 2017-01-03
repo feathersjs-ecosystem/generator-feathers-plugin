@@ -37,7 +37,6 @@
     ]
   },
   "dependencies": {
-    "object.assign": "^4.0.3",
     "yeoman-generator": "^1.0.1"
   },
   "devDependencies": {
@@ -46,7 +45,7 @@
     "yeoman-test": "^1.4.0"
   },
   "engines": {
-    "node": ">= 4.6.0"
+    "node": ">= 5.0.0"
   },
   "license": "MIT"
 }

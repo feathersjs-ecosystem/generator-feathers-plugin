@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "app/templates/client/package.json.js",
+        "app/templates/package.json",
+        "package.json"
+      ]
+    }
+  }
+}

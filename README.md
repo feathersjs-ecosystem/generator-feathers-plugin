@@ -1,8 +1,5 @@
 # generator-feathers-plugin
 
-
-> __Important:__ The code for this module has been moved into the main Feathers repository at [feathersjs/feathers](https://github.com/feathersjs/feathers) ([package direct link](https://github.com/feathersjs/feathers/tree/master/packages/generator-feathers-plugin)). Please open issues and pull requests there. No changes in your existing Feathers applications are necessary.
-
 A [Yeoman](http://yeoman.io) generator for initializing new [Feathersjs](https://github.com/feathersjs) plug-ins.
 
 ## Getting Started

@@ -22,7 +22,7 @@ describe('feathers-plugin generator', () => {
         name: 'feathers-tmp',
         repository: 'feathersjs/feathers-tmp',
         description: 'Plugin description here',
-        client: true
+        client: false
       })
       .on('end', function () {
         assert.ok(fs.existsSync(path.join(tmpDir, '.npmignore')));

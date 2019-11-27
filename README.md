@@ -1,5 +1,7 @@
 # generator-feathers-plugin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs/generator-feathers-plugin.svg)](https://greenkeeper.io/)
+
 A [Yeoman](http://yeoman.io) generator for initializing new [Feathersjs](https://github.com/feathersjs) plug-ins.
 
 ## Getting Started
